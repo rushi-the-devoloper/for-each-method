@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- for each method example-->
+
+    <script>
+        // example 1
+     const staffdetails = [
+       { name: "johndoe" ,
+         age:33,
+         sallery: 40000
+    },
+      { name: "joshua" ,
+         age:29,
+         sallery: 50000
+    },
+      { name: "alzari" ,
+         age:29,
+         sallery: 40000
+    }
+     ]
+
+     const staffname = staffdetails.forEach(function (staffinfo){
+        console.log( 
+            "staff name: "+staffinfo.name +  "staffsallery  "+ staffinfo.sallery)
+        
+     })
+
+     // example 2
+    // print the table of given numbers
+
+     const numbers = [2,4,6,8,10,12]
+      function table(num){
+      for(let i = 1 ; i<=10;i++)
+      console.log( num*i)
+      }
+      
+
+     
+      const tableOf = numbers.forEach(function table(num){
+      for(let i = 1 ; i<=10;i++)
+      console.log( num*i)
+      })
+
+       // example no 3 
+       const mobiles = [{
+        name: "oppo A71",
+        price: 12000,
+        launchIn: 2018
+       },
+     {
+        name : "vivo v19",
+        price : 17000,
+        launchIn : 2018
+     },
+     {
+        name: "samsung m30",
+        price: 20000,
+        launchIn : 2021
+     }]
+
+
+    var search = prompt()
+
+    
+
+    let z = mobiles.forEach( function(obj){
+       if(obj.price==search){
+         console.log(obj.name)
+       }
+       else{
+        console.log("search not found")
+       }
+    }
+      
+    )
+    
+
+    
+    
+      
+      
+      
+      
+        
+      
+     
+     
+    </script>
+</body>
+</html>
